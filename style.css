@@ -1,0 +1,289 @@
+.navList:hover {
+    transform: scale(1.1);
+    transition: all .3s linear;
+}
+
+.sec-1-image {
+    text-align: center;
+    width: 251px;
+    animation: phone 3s linear infinite;
+}
+
+@keyframes phone {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-3.5rem);
+    }
+}
+
+.bg-sec1 {
+    background-color: rgb(249, 82, 110);
+}
+
+.card {
+    overflow: hidden;
+}
+
+.sec2-img1:hover {
+    rotate: 60deg;
+    transition: 2s;
+    transform: scale(1.5);
+    overflow: hidden;
+    overflow: hidden;
+}
+
+.sec2-img3:hover {
+    rotate: 90deg;
+    transition: 2s;
+    transform: scale(1.5);
+    overflow: hidden;
+    overflow: hidden;
+}
+
+.sec2-img2:hover {
+    transition: 2s;
+    transform: scale(1.2);
+}
+
+.sec-4 {
+    background-image: url('https://ganeshdutt100.github.io/Mobile-World/feature-bg.png');
+    background-size: cover;
+}
+
+.sec-4 h1 {
+    font-size: 50px;
+}
+
+.sec-4 img {
+    width: 340px;
+}
+
+.sec4card-title {
+    color: #262626;
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.small-desc {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+}
+
+.small-desc {
+    font-size: 1em;
+}
+
+.go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 3.5em;
+    height: 3.5em;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    border-radius: 0 4px 0 32px;
+    background: linear-gradient(to top, #ff007a 0%, rgba(142, 0, 116, 1) 100%);
+}
+
+.go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+    font-size: 24px;
+}
+
+.sec4card {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 320px;
+    background-color: #f2f8f9;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sec4card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(to top, #ff007a 0%, rgba(142, 0, 116, 1) 100%);
+    height: 32px;
+    width: 35px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+}
+
+.sec4card:hover:before {
+    transform: scale(28);
+}
+
+.sec4card:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sec4card:hover .sec4card-title {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+}
+/* 
+.sec4card1 {
+    transform: translate(50%,50%);
+}
+
+.sec4card2 {
+    transform: translate(50%,50%);
+} */
+
+.sec4card3 {
+    /* transform: translate(50%,50%); */
+    width: 320px;
+}
+
+.sec4card4 {
+    /* transform: translate(50%,50%); */
+    width: 320px;
+}
+
+.sec4card5 {
+    /* transform: translate(50%,50%); */
+    width: 360px;
+}
+
+.sec4card6 {
+    /* transform: translate(50%,50%); */
+    width: 360px;
+}
+
+@media only screen and (min-width:992px) {
+
+    .sec4card2{
+        left: 90px;
+    }
+    
+    .sec4card4 {
+        width: 350px;
+        left: 140px;
+    }
+
+    .sec4card6 {
+        left: 180px;
+    }
+}
+
+.btn-color{
+    background: linear-gradient(to top, #ff007a 0%, rgba(142, 0, 116, 1) 100%);
+    color: white;
+    padding: 12px 14px;
+}
+
+
+
+
+/* 
+
+Slider
+
+*/
+
+.card1 {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-bottom: 2rem;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    background: linear-gradient(to top, #ff007a 0%, rgba(142, 0, 116, 1) 100%);
+    padding: 1.5rem;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #fff
+  }
+  
+  .price {
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #fff
+  }
+  
+  .desc {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.625;
+    color: white;
+
+  }
+  
+  .lists {
+    margin-bottom: 1.5rem;
+    flex: 1 1 0%;
+    color: white;
+  }
+  
+  .lists .list {
+    margin-bottom: 0.5rem;
+    display: flex;
+    margin-left: 0.5rem
+  }
+  
+  .lists .list svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+    color: white;
+  }
+  
+  .action {
+    border: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 0.25rem;
+    background-color: rgb(255, 255, 255);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: rgb(0, 0, 0);
+  }
