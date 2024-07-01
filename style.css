@@ -149,6 +149,7 @@
     transition: all 0.5s ease-out;
     color: #ffffff;
 }
+
 /* 
 .sec4card1 {
     transform: translate(50%,50%);
@@ -180,10 +181,10 @@
 
 @media only screen and (min-width:992px) {
 
-    .sec4card2{
+    .sec4card2 {
         left: 90px;
     }
-    
+
     .sec4card4 {
         width: 350px;
         left: 140px;
@@ -194,7 +195,7 @@
     }
 }
 
-.btn-color{
+.btn-color {
     background: linear-gradient(to top, #ff007a 0%, rgba(142, 0, 116, 1) 100%);
     color: white;
     padding: 12px 14px;
@@ -228,51 +229,51 @@ Slider
 .header {
     display: flex;
     flex-direction: column;
-  }
-  
-  .title {
+}
+
+.title {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 700;
     color: #fff
-  }
-  
-  .price {
+}
+
+.price {
     font-size: 3.75rem;
     line-height: 1;
     font-weight: 700;
     color: #fff
-  }
-  
-  .desc {
+}
+
+.desc {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     line-height: 1.625;
     color: white;
 
-  }
-  
-  .lists {
+}
+
+.lists {
     margin-bottom: 1.5rem;
     flex: 1 1 0%;
     color: white;
-  }
-  
-  .lists .list {
+}
+
+.lists .list {
     margin-bottom: 0.5rem;
     display: flex;
     margin-left: 0.5rem
-  }
-  
-  .lists .list svg {
+}
+
+.lists .list svg {
     height: 1.5rem;
     width: 1.5rem;
     flex-shrink: 0;
     margin-right: 0.5rem;
     color: white;
-  }
-  
-  .action {
+}
+
+.action {
     border: none;
     outline: none;
     display: inline-block;
@@ -286,4 +287,255 @@ Slider
     font-weight: 600;
     letter-spacing: 0.05em;
     color: rgb(0, 0, 0);
-  }
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.box-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media screen and (min-width:1380px) {
+    .box-container {
+        flex-direction: row
+    }
+}
+
+.box-item {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    width: 415px;
+    margin-bottom: 35px;
+    max-width: 100%;
+}
+
+.flip-box {
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+}
+
+.flip-box-front,
+.flip-box-back {
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    min-height: 340px;
+    -ms-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+    transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+    -webkit-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-front {
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.flip-box-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-back {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.flip-box .inner {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+
+    transform: translateY(-50%) translateZ(60px) scale(.94);
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+    -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+    top: 50%;
+}
+
+.flip-box-header {
+    font-size: 34px;
+}
+
+.flip-box p {
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.flip-box-img {
+    margin-top: 25px;
+}
+
+.flip-box-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+.formcontainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.screen {		
+	background: linear-gradient(90deg, #5D54A4, #7C78B8);
+    height: 400px;
+    width: 360px;
+    box-shadow: 0px 0px 24px #5C5696;
+    border-radius: 20px;
+}
+
+.screen__content {
+	z-index: 1;
+	height: 100%;
+}
+
+
+.login {
+    width: 320px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 77px;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+.social-login {	
+	position: absolute;
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-login__icon {
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;	
+	text-shadow: 0px 0px 8px #7875B5;
+}
+
+.social-login__icon:hover {
+	transform: scale(1.5);	
+}
